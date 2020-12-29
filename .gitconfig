@@ -1,0 +1,11 @@
+[user]
+	name = Bernie Gray
+	email = bfgray3@gmail.com
+[alias]
+	s = status
+	d = diff
+	l = log --all --graph --decorate
+	b = branch
+	poh = push origin HEAD
+[core]
+	editor = vim
