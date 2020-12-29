@@ -1,5 +1,4 @@
 export BASH_SILENCE_DEPRECATION_WARNING=1
-export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 function git_branch() {
     git rev-parse --abbrev-ref HEAD 2> /dev/null | sed -e 's/.*/ (&)/'
