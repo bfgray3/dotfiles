@@ -1,14 +1,6 @@
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
-function linux() {
-    if [[ -z $(docker images -q python_image) ]]
-    then
-        docker build -t python_image ~/repos/docker
-    fi
-    docker run -it python_image
-}
-
 function git_branch() {
     git rev-parse --abbrev-ref HEAD 2> /dev/null | sed -e 's/.*/ (&)/'
 }
