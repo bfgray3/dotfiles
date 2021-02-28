@@ -14,13 +14,13 @@ function virtualenv_string() {
 function make_command_prompt() {
     local exit_status="$?"
 
-    PS1="$(virtualenv_string)\[\033[1;36m\]\D{%F %T} \[\033[32m\]\u\]@\h:\w\[\033[33m\]\$(git_branch)\[\033[00m\]\n"
+    PS1="$(virtualenv_string)\[\033[1;36m\]\D{%F %T} \[\033[32m\]\u\]@\h:\w\[\033[33m\]\$(git_branch)\n"
 
     if [[ "$exit_status" -eq 0 ]]
     then
-        PS1+="\[\033[32m\]$\033[0m "
+        PS1+="\[\033[32m\]$\[\033[0m\] "
     else
-        PS1+="\[\033[31m\]!\033[0m "
+        PS1+="\[\033[31m\]!\[\033[0m\] "
     fi
 }
 
@@ -33,5 +33,4 @@ alias l='ls -GFlh'
 alias la='ls -GFAlh'
 alias r='R --vanilla'
 alias p='PYTHONASYNCIODEBUG=1 PYTHONTRACEMALLOC=1 python3'
-alias t='top -o mem'
 alias repos='cd ~/repos'
