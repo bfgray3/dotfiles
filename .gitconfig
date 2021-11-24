@@ -9,3 +9,5 @@
 	poh = push origin HEAD
 [core]
 	editor = vim
+[fetch]
+	prune = true
