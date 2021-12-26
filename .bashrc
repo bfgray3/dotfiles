@@ -30,14 +30,6 @@ function make_command_prompt() {
 ### COMMAND PROMPT ###
 PROMPT_COMMAND=make_command_prompt
 
-### ALIASES ###
-alias lt='ls -Flth --color=auto'
-alias l='ls -Flh --color=auto'
-alias la='ls -FAlh --color=auto'
-alias p='PYTHONASYNCIODEBUG=1 PYTHONTRACEMALLOC=1 python3'
-alias repos='cd ~/repos'
-alias grep='grep --color=auto'
-
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 if [[ -f ~/.bash_aliases ]]
