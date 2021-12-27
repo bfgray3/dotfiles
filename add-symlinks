@@ -2,5 +2,5 @@
 
 for f in .bash_aliases .bashrc .gitconfig .vimrc
 do
-    ln -sf {$PWD,~}/$f
+    ln -sf {"$PWD",~}/$f
 done
