@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+ln -sf {,~/}.bash_aliases
+ln -sf {,~/}.bashrc
+ln -sf {,~/}.gitconfig 
+ln -sf {,~/}.vimrc
