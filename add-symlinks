@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ln -sf {,~/}.bash_aliases
-ln -sf {,~/}.bashrc
-ln -sf {,~/}.gitconfig 
-ln -sf {,~/}.vimrc
+for f in .bash_aliases .bashrc .gitconfig .vimrc
+do
+    ln -sf {$PWD,~}/$f
+done
