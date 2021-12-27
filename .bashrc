@@ -3,6 +3,10 @@ case $- in
       *) return;;
 esac
 
+HISTCONTROL=ignoreboth
+
+shopt -s histappend
+
 function git_branch() {
     git rev-parse --abbrev-ref HEAD 2> /dev/null | sed -e 's/.*/ (&)/'
 }
@@ -27,7 +31,6 @@ function make_command_prompt() {
     fi
 }
 
-### COMMAND PROMPT ###
 PROMPT_COMMAND=make_command_prompt
 
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'

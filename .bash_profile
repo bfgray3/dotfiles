@@ -1,3 +1,8 @@
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 function git_branch() {
@@ -24,10 +29,10 @@ function make_command_prompt() {
     fi
 }
 
-### COMMAND PROMPT ###
 PROMPT_COMMAND=make_command_prompt
 
 ### ALIASES ###
+# TODO: put these in an apple-specific .bash_aliases?
 alias lt='ls -GFlth'
 alias l='ls -GFlh'
 alias la='ls -GFAlh'
