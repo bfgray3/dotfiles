@@ -1,6 +1,6 @@
 alias lt='ls -Flth --color=auto'
 alias l='ls -Flh --color=auto'
 alias la='ls -FAlh --color=auto'
-alias p='PYTHONASYNCIODEBUG=1 PYTHONTRACEMALLOC=1 python3'
+alias p='python'
 alias repos='cd ~/repos'
 alias grep='grep --color=auto'
