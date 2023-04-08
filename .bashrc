@@ -37,3 +37,7 @@ if [[ -f ~/.bash_aliases ]]
 then
     . ~/.bash_aliases
 fi
+
+export EDITOR=vim
+export VISUAL=vim
+export VIRTUALENV_NO_PERIODIC_UPDATE=1
