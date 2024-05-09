@@ -4,3 +4,6 @@ for f in .bash_aliases .bashrc .gitconfig .vimrc
 do
     ln -sf {"$PWD",~}/$f
 done
+
+mkdir -p ~/.config/git
+ln -sf "$PWD"/ignore ~/.config/git/ignore
