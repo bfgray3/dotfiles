@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 alias lt='ls -Flth --color=auto'
 alias l='ls -Flh --color=auto'
 alias la='ls -FAlh --color=auto'
