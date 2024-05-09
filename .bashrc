@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 case $- in
     *i*) ;;
       *) return;;
@@ -35,6 +37,7 @@ PROMPT_COMMAND=make_command_prompt
 
 if [[ -f ~/.bash_aliases ]]
 then
+    # shellcheck disable=SC1090
     . ~/.bash_aliases
 fi
 
