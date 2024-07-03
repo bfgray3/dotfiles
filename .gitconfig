@@ -8,6 +8,8 @@
 	b = branch
 	poh = push origin HEAD
 	rph = rev-parse HEAD
+	# TODO: parametrize this for default branch name and maybe remote name
+	cob = "!git fetch && git checkout origin/main -b \"$1\" #"
 [core]
 	editor = vim
 	excludesfile = ~/.config/git/ignore
