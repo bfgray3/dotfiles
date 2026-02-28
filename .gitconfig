@@ -12,6 +12,5 @@
 	cob = "!git fetch && git checkout origin/main -b \"$1\" #"
 [core]
 	editor = vim
-	excludesfile = ~/.config/git/ignore
 [fetch]
 	prune = true
