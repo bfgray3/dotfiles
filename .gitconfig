@@ -9,7 +9,7 @@
 	poh = push origin HEAD
 	rph = rev-parse HEAD
 	cob = "!git fetch origin HEAD && git checkout origin/HEAD -b \"$1\" #"
-	merge-main = "!git fetch origin HEAD && git merge origin/HEAD"
+	merge-default = "!git fetch origin HEAD && git merge origin/HEAD"
 [core]
 	editor = vim
 [fetch]
