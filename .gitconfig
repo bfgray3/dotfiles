@@ -9,7 +9,8 @@
 	poh = push origin HEAD
 	rph = rev-parse HEAD
 	# TODO: parametrize this for default branch name and maybe remote name
-	cob = "!git fetch && git checkout origin/main -b \"$1\" #"
+	cob = "!git fetch origin main && git checkout origin/main -b \"$1\" #"
+	merge-main = "!git fetch origin main && git merge origin/main"
 [core]
 	editor = vim
 [fetch]
